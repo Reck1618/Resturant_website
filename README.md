@@ -1,2 +1,2 @@
 # Resturant_website
-A simple Resturant Website built with HTML/CSS/JS.
+A simple Restaurant Website built with HTML/CSS/JS.
