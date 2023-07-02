@@ -52,6 +52,19 @@
   cursor: pointer;
 }
 
+.header__menu li::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width .3s;
+}
+
+.header__menu li:hover::after{
+  width: 100%;
+}
+
 .header__menu li img {
   width: 24px;
   height: 24px;
@@ -61,6 +74,5 @@
 .header__menu-mobile {
   display: none;
   gap: 20px;
-
   position: relative;
 }
