@@ -96,8 +96,12 @@
 }
 
 .popular-foods__button:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-color);
+}
+
+.popular-foods__button:hover img {
+    filter: invert(1);
 }
 
 .popular-foods__card {
