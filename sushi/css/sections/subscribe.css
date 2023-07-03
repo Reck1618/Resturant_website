@@ -39,6 +39,16 @@
     border-radius: 46px;
 }
 
+.subscription__form.clicked {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.subscription__form.focused {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 .subscription__form input {
     flex: 1;
     font-size: 16px;

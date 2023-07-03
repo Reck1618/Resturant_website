@@ -44,3 +44,29 @@ filterButtons.forEach(button => {
     button.classList.add('active');
   });
 });
+
+
+const subscriptionForm = document.querySelector('.subscription__form');
+
+// Focus on the input field when it's engaged
+const submitButton = document.getElementById('submitButton');
+
+submitButton.addEventListener('click', function() {
+  subscriptionForm.classList.add('clicked');
+
+  // Remove the "clicked" class after a delay (e.g., 100ms)
+  setTimeout(function() {
+    subscriptionForm.classList.remove('clicked');
+  }, 100);
+});
+
+// Highlight the input field when the submit button is clicked
+const emailInput = document.getElementById('emailInput');
+
+emailInput.addEventListener('focus', function() {
+  subscriptionForm.classList.add('focused');
+});
+
+emailInput.addEventListener('blur', function() {
+  subscriptionForm.classList.remove('focused');
+});
