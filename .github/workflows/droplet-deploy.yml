@@ -27,7 +27,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           source: ./sushi/dist/
-          target: /var/www/3d-tshirt
+          target: /var/www/sushi-restaurant
 
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
